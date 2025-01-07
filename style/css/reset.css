@@ -1,0 +1,119 @@
+/* Reset CSS */
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Remove default padding and margins */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding-inline-start: 0px;
+
+}
+/* Remove list styles */
+ul[role='list'], ol[role='list'], li {
+    list-style: none;
+}
+
+/* Remove text decoration on all links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset form elements */
+button, input, textarea, select {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Remove tap highlight on mobile */
+a, button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Set default styles for buttons */
+button {
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+}
+
+/* Reset table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset quotes */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+}
+
+/* Make images responsive */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Reset iframe styles */
+iframe {
+    border: 0;
+}
+
+/* Remove default focus outlines */
+:focus {
+    outline: none;
+}
+
+/* Reset strong and bold weights */
+strong, b {
+    font-weight: bold;
+}
+
+/* Reset vertical alignment for multimedia */
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+/* Set a default font */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset code styles */
+code, pre {
+    font-family: monospace;
+    font-size: 1em;
+    background: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}

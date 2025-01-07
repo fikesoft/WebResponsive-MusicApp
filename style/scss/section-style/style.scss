@@ -1,0 +1,19 @@
+//Import global
+@use '../variables' as *; 
+@use '../mixins' as *;
+//Import sections
+@use  './nav-bar' as *;
+@use './home' as *;
+@use './top_songs' as *;
+@use './footer' as *;
+@use './album' as * ;
+//Import medias
+@use './media-queries/media-query' as *;
+
+.container{
+    background-color: $bg-color;
+    height: 100vh;
+    color:white;
+    @include vazirmatn-typography(16px,400px);
+    display: flex;
+}

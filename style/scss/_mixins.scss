@@ -1,0 +1,9 @@
+@mixin vazirmatn-typography($size, $weight, $style: normal, $line-height: 1.5, $letter-spacing: normal) {
+    font-family: "Vazirmatn", serif;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+  }
+  

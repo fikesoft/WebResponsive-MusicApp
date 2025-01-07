@@ -1,0 +1,106 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.albums-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+
+  &-title {
+    @include vazirmatn-typography(32px, 800);
+    margin-left: 10px;
+
+    span {
+      color: $rose-main;
+    }
+  }
+
+  &-menu-album {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;                
+    justify-content: center;   
+
+   
+    .item {
+      flex: 0 0 calc(50% - 24px); 
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      opacity: 1;           
+      transform: scale(1);  
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      background-color: $bg-form-color;
+      padding: 10px;
+      border-radius: 10px;
+      position: relative; 
+
+      img {
+        max-width: 150px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .additional-text {
+        display: none;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+
+        .details {
+          max-width: 250px;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.1); 
+        z-index: 2;
+
+        .additional-text {
+          display: flex;
+          flex-direction: column; 
+          max-width: 200px;
+
+          p {
+            @include vazirmatn-typography(12px, 300);
+
+            span {
+              color: $rose-main;
+              @include vazirmatn-typography(14px, 600);
+            }
+          }
+
+          .buy-btn {
+            background-color: $rose-main;
+            padding: 5px 25px;
+            border-radius: 4px;
+            color: white;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1440px) {
+      .item {
+        flex: 0 0 calc(25% - 24px); 
+      }
+    }
+
+ 
+    &:hover {
+      .item:not(:hover) {
+        opacity: 0.7;         
+        transform: scale(0.95);
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@use '../variables' as *; 
+@use '../mixins' as *;
+
+.weekly-top{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    .title{
+        @include vazirmatn-typography(32px ,800);
+        span{
+            color: $rose-main;
+        }
+            margin-left: 20px;
+
+    }
+    .menu-songs{
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            background-color: $bg-form-color;
+            padding: 4px 15px;
+            border-radius: 10px;
+            img{
+                max-width: 150px;
+                border-radius: 10px;
+            }
+            .text{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                .buy-btn{
+                    display: none;
+                }
+            }
+        }
+        &-item:hover{
+            .buy-btn{
+                display: block;
+                @include vazirmatn-typography(14px,300);
+                padding: 7px 16px;
+                background-color: $rose-main;
+                color: white;
+                border-radius: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@use '../variables' as *; 
+@use '../mixins' as *;
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+    background-color: $bg-color;
+    box-shadow: 0px -23px 23px rgba(0, 0, 0, 0.27);
+    width: 100%;
+    padding: 30px 20px 15px 20px;
+    .info-about{
+        display: flex;
+        flex-direction: column;
+        .title{
+            @include vazirmatn-typography(24px ,600);
+        }
+        .text{
+            max-width: 350px;        
+            @include vazirmatn-typography(16px ,400);
+            span{
+                color:$rose-main;
+            }
+            .span2{
+                color:$blue-main;
+            }
+        }
+    }
+    .actions{
+        display: flex;
+        gap: 22px;
+        .action{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            .title{
+                padding: 10px;
+                @include vazirmatn-typography(24px,600);
+                border-bottom: 2px solid white;
+            }
+            .menu{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &-item-link{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    .info-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .nav-bar-logo{
+            padding: 10px 37px;
+        }
+        .icons-social-media{
+            display: flex;
+            img{
+                padding: 7px 18px;
+
+            }
+        }
+    }
+}

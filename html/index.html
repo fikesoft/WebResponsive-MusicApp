@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/css/reset.css">
+    <link rel="stylesheet" href="../style/css/section-style/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-logo">Medaculum</h1>
+          
+            <div class="burger" onclick="toggleNav()">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </header>
+        <!--NAVBAR--------MARKUP -->
+        <nav class="nav-bar">
+            <h1 class="nav-bar-logo">Medaculum</h1>
+            <!--NAVBAR-ACCES-TO-EVERYTHING -->
+            <ul class="nav-bar-actions">
+                <li class="nav-bar-actions-menu">
+                    <!--HOME----------PART -->
+                    <p class="nav-bar-actions-menu-title">Menu</p>
+                    <ul class="nav-bar-actions-menu-inner">
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/home.png" alt="icon">
+                            <p class="text">Home</p>
+                        </li>
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/discover.png" alt="icon">
+                            <p class="text">Discover</p>
+                        </li>
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/albums.png" alt="icon">
+                            <p class="text">Albums</p>
+                        </li>
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/artists.png" alt="icon">
+                            <p class="text">Artists</p>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-bar-actions-menu">
+                    <!--LIBRAY----------PART -->
+                    <p class="nav-bar-actions-menu-title">Library</p>
+                    <ul class="nav-bar-actions-menu-inner">
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/recently-added.png" alt="icon">
+                            <p class="text">Recently Added</p>
+                        </li>
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/most-played.png" alt="icon">
+                            <p class="text">Most played</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-bar-actions-menu">
+                    <!--PLAYLIST AND FAVORITE----------PART -->
+                    <p class="nav-bar-actions-menu-title">Playlist and favorite</p>
+                    <ul class="nav-bar-actions-menu-inner">
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/heart.png" alt="icon">
+                            <p class="text">Your favorites</p>
+                        </li>
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/your-playlist.png" alt="icon">
+                            <p class="text">Your playlist</p>
+                        </li>
+                        <li class="nav-bar-actions-menu-inner-item">
+                            <img class="icon" src="../img/add-playlist.png" alt="icon">
+                            <p class="text">Add playlist</p>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <!--MAIN SECTION HERE WILL BE MAIN CONTENT    -->
+        <main class="main" >
+        <!--HOME CONTENT---------------------------------------------------- -->
+            <section class="home">
+                <div class="home-content">
+
+                   <div class="home-content-nav">
+                        <div class="home-content-nav-search-form">
+                            <img src="../img/search.png" alt="icom">
+                            <input placeholder="Search For Musics, Artists" style="padding-left: 10px;">
+                        </div>
+                        <a class="home-content-nav-links">About Us</a>
+                        <a class="home-content-nav-links">Contact</a>
+                        <a class="home-content-nav-links">Premium</a>
+                   </div> 
+                   <div class="home-content-title">
+                        <h1 class="title-content">
+                            All the <span class="rose-main">Best Songs</span> in One Place
+                        </h1>
+                        <p class="text"> On our website, you can access a
+                            n amazing collection of popular and new songs. Stream your
+                             favorite tracks in high quality and enjoy
+                             without interruptions. Whatever your taste in music, we 
+                             have it all for you!
+                        </p>
+                        <div class="buttons">
+                            <button class="btn-discover">Discover Now</button>
+                            <button class="btn-create">Create Playlist</button>
+                        </div>
+                            
+                   </div>
+
+                </div>
+              
+            </section>
+            <!--HOME CONTENT END------------------------ -->
+            <!--TOP-SONGS-SOLD------------------------ -->
+            <section class="weekly-top">
+                <h1 class="title">Weekly Top <span>Sales</span> </h1>
+                <ul class="menu-songs">
+                    <li class="menu-songs-item">
+                        <img src="../img/Top Songs/liza.png" alt="album-photo">
+                        <div class="text"> 
+                            <h4 class="title-album">Hate Love</h4>
+                            <p class="text-album">Liza</p>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="menu-songs-item">
+                        <img src="../img/Top Songs/million.png" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">Million Dollar Depression</h4>
+                            <p class="text-album">Judgment Day</p>
+                            <button class="buy-btn">Buy</button>
+
+                        </div>
+                    </li>
+                    <li class="menu-songs-item">
+                        <img src="../img/Top Songs/wish.jpg" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">Wish You Were Here</h4>
+                            <p class="text-album">Have a Cigar</p>
+                            <button class="buy-btn">Buy</button>
+
+                        </div>
+                    </li>
+                    <li class="menu-songs-item">
+                        <img src="../img/Top Songs/JVKE_-_Golden_Hour.png" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">Golden Hour</h4>
+                            <p class="text-album">Golden Hour</p>
+                            <button class="buy-btn">Buy</button>
+
+                        </div>
+                    </li>
+                    <li class="menu-songs-item">
+                        <img src="../img/Top Songs/billiecover.webp" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">Happier Than Ever</h4>
+                            <p class="text-album">My Future</p>
+                            <button class="buy-btn">Buy</button>
+
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+            <!--TOP-SONGS-SOLD-----------END------------- -->
+            <!--TOP-ALBUMS-SOLD-----------START------------- -->
+            <section class="albums-section">
+                <h1 class="albums-section-title">Weekly Top  <span>Album Sales</span> </h1>
+                <ul class="albums-section-menu-album">
+                    <li class="item">
+                        <img src="../img/Top Albums/Drake-scorpion.jpg" alt="album-photo">
+                        <div class="text"> 
+                            <h4 class="title-album">Scorpion</h4>
+                            <p class="text-album">Drake</p>   
+                        </div>
+                        <div class="additional-text">
+                            <p>Release Date: <span>2018</span></p>
+                            <p>Genre: <span>Hip-Hop</span></p>
+                            <p>Some additional details about album...</p>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="../img/Top Albums/carlas ngoc.jpg" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">NGOC</h4>
+                            <p class="text-album">Carla's Dreams</p>
+                        </div>
+                        <div class="additional-text">
+                            <p>Release Date: <span>2018</span></p>
+                            <p>Genre: <span>Hip-Hop</span></p>
+                            <p>Some additional details about album...</p>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="../img/Top Albums/satoshi 373.jpg" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">+373</h4>
+                            <p class="text-album">Satoshi</p>
+                        </div>
+                        <div class="additional-text">
+                            <p>Release Date: <span>2018</span></p>
+                            <p>Genre: <span>Hip-Hop</span></p>
+                            <p class="details">Some additional details about  album...</p>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="../img/Top Albums/Goodbye & Good Riddance.webp" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">Goodbye & Good Riddance</h4>
+                            <p class="text-album">JUICE WRLD</p>
+                        </div>
+                        <div class="additional-text">
+                            <p>Release Date: <span>2018</span></p>
+                            <p>Genre: <span>Hip-Hop</span></p>
+                            <p>Some additional details about  album...</p>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <img src="../img/Top Albums/kizaru.jpg" alt="album-photo">
+                        <div class="text">
+                            <h4 class="title-album">Armaghedon</h4>
+                            <p class="text-album">Kizaru</p>
+                        </div>
+                        <div class="additional-text">
+                            <p>Release Date: 2018</p>
+                            <p>Genre: <span>Hip-Hop</span></p>
+                            <p>Some additional details about album...</p>
+                            <button class="buy-btn">Buy</button>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </section>
+            <footer class="footer">
+                <div class="info-about">
+                    <h4 class="title">About</h4>
+                    <p class="text">
+                        Medaculum is a website that has been created for over <span class="span1">150 years </span>
+                        now and it is one of the most famous music player websites in
+                         the world. in this website you can listen and download songs for free. 
+                         also of you want no limitation you can buy our <span class="span2">premium pass</span>.
+                    </p>
+                </div>
+                <!--ACTIONS----------------------->
+                <div class="actions">
+                    <div class="action">
+                        <h4 class="title">Melodies</h4>
+                        <ul class="menu">
+                            <li class="menu-item-link">
+                                Songs
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <h4 class="title">Access</h4>
+                        <ul class="menu">
+                            <li class="menu-item-link">
+                                Explore
+                            </li>
+                            <li class="menu-item-link">
+                                Albums 
+                            </li>
+                            <li class="menu-item-link">
+                                Playlists
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="action">
+                        <h4 class="title">Contact</h4>
+                        <ul class="menu">
+                            <li class="menu-item-link">
+                                About
+                            </li>
+                            <li class="menu-item-link">
+                                Contact 
+                            </li>
+                            <li class="menu-item-link">
+                                Premium
+                            </li>   
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-contact">
+                    <h1 class="nav-bar-logo">Medaculum</h1>
+                    <div class="icons-social-media">
+                        <img src="../img/social-media/1.png">
+                        <img src="../img/social-media/2.png">
+                        <img src="../img/social-media/3.png">
+                        <img src="../img/social-media/4.png">
+                    </div>
+                </div>
+            </footer>
+
+
+        </main>     
+    </div>
+    <script src="../index.js" defer></script>
+</body>
+</html>
